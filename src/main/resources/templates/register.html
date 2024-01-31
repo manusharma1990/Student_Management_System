@@ -1,0 +1,45 @@
+<html xmlns:th ="http://www.thymeleaf.org">
+<head>
+<title>Registration Page</title>
+</head>
+<body>
+<p>it is register form</p>
+<form method="post" action="/student/register">
+<table>
+	<tr>
+		<td>Username</td>
+		<td><input type="text" name = "username" placeholder="enter username" />
+	</tr>
+	<tr>
+		<td>Password</td>
+		<td><input type="password" name = "password" placeholder="Enter password of your choice" />
+	</tr>
+	<tr>
+		<td>Full Name</td>
+		<td><input type="text" name = "fullname" placeholder="Enter your full name" />
+	</tr>
+	<tr>
+		<td>Fee</td>
+		<td><input type="number" name = "fee" placeholder="Enter your full name" value="5000"  />
+	</tr>
+	<tr>
+		<td>Course</td>
+		<td><input type="text" name = "course" placeholder="Your course is" />
+	</tr>
+	<tr>
+		<td>Address</td>
+		<td><input type="text" name = "address" placeholder="Enter your address" />
+	</tr>
+	<tr>
+		<td>Join Date</td>
+		<td><input type="date" name = "join_on"  />
+	</tr>
+	
+	<tr>
+	<td><input type="submit" value="register"/></td>
+	</tr>
+</table>
+
+</form>
+</body>
+</html>

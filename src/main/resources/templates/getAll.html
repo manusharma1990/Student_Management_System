@@ -1,0 +1,44 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Student All Records</title>
+<link href = "@{style.css}" rel = "stylesheet" >
+<style type="text/css">
+	table, tr, th, td{
+	border: 1px solid red;
+	text-align:center;
+	background-color: white;
+	}
+	th{
+		background-color: gold;
+	}
+	.main{
+	margin-left:300px;
+	margin-top:50px; 
+	background-color: silver;
+	background-image: url("https://th.bing.com/th/id/OIP.mAjvRXK3f75XhBfJ_YtwwQHaHa?rs=1&pid=ImgDetMain");
+	}
+</style>
+</head>
+<body class="main">
+	<table th:class="table-info">
+		<tr>
+			<th>ID</th>
+			<th>Name</th>
+			<th>Address</th>
+			<th>username</th>
+			<th>Join Date <br> (yyyy-mm-dd)</th>
+			<th>Course</th>
+			<th>Fee</th>
+		</tr>
+		<tr th:each ="student : ${students}">
+			<td th:text = "${student.id}"></td>
+			<td th:text = "${student.fullname}"></td>
+			<td th:text = "${student.address}"></td>
+			<td th:text = "${student.username}"></td>
+			<td th:text = "${student.join_on}"></td>
+			<td th:text = "${student.course}"></td>
+			<td th:text = "${student.fee}"></td>
+		</tr>
+	</table>
+</body>
+</html>
