@@ -11,7 +11,6 @@ import com.student.model.Student;
 import com.student.repository.StudentRepo;
 @Service
 public class StudentServiceImp implements StudentService {
-
 	@Autowired
 	private StudentRepo studentRepo;
 	@Override
